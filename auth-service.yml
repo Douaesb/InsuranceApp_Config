@@ -1,7 +1,6 @@
 server:
   port: 8083
 
-# Database configuration
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/authdb
@@ -13,17 +12,10 @@ spring:
       ddl-auto: update
     show-sql: true
 
-# JWT configuration
 insurance:
   app:
     jwtSecret: fJmjxfjHHni+yKrEY5huFzbLGGkhWZyksdhglTu+cI68WL6MM9rl3Ab8jrRvrOPeCGRKp7+7xAzeqbV6VI8CLA==
     jwtExpirationMs: 86400000
-
-# Eureka client configuration
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
 
 logging:
   level:
